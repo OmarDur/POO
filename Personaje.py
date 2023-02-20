@@ -10,12 +10,12 @@ class Personaje:
         if(status):
             print("El personaje "+ self.nombre +" el personaje esta corriendo")
         else:
-            print("El personaje "+ self.nombre+ "se detuvo")
+            print("El personaje "+ self.nombre+ " se detuvo")
 
     def lanzargranadas(self):
-        print("El personaje"+self.nombre +"lanzo una granada")
+        print("El personaje "+self.nombre +" lanzo una granada")
 
     def recargarArma(self, municiones):
-        corgador=10
+        cargador=10
         cargador= cargador + municiones
-        print("El arma tiene" + cargador +"balas")
+        print("El arma tiene " + str(cargador) +" balas")
