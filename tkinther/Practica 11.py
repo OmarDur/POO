@@ -1,4 +1,8 @@
-from tkinter import Tk, Button, Frame
+from tkinter import Tk, Button, Frame, messagebox
+
+def mostrarMensaje():
+    messagebox.showinfo("Aviso", "Presione el boton azul")
+
 
 #1. Instanciamos la ventana
 ventana= Tk()
@@ -18,7 +22,7 @@ seccion3.pack(expand=True, fill="both")
 
 #3.- Agregamos botones
 
-botonAzul= Button(seccion1, text="Boton Azul", fg="blue")
+botonAzul= Button(seccion1, text="Boton Azul", fg="blue" , command=mostrarMensaje)
 botonAzul.place(x=60, y=60)
 
 botonNegro= Button(seccion2, text="Boton Negro", fg="black", bg="white")
