@@ -16,5 +16,21 @@ seccion3= Frame(ventana, bg="green")
 seccion3.pack(expand=True, fill="both")
 
 
+#3.- Agregamos botones
+
+botonAzul= Button(seccion1, text="Boton Azul", fg="blue")
+botonAzul.place(x=60, y=60)
+
+botonNegro= Button(seccion2, text="Boton Negro", fg="black", bg="white")
+botonNegro.grid(row=0 , column=0)
+
+botonAmarillo= Button(seccion2, text="Boton rojo", fg="red", bg="orange")
+botonAmarillo.grid(row=1 , column=1)
+
+botonVerde= Button(seccion3, text="Boton verde", fg="red", bg="green")
+botonVerde.configure(height=2,width=10)
+botonVerde.pack()
+
+
 #LLamamos el Main
 ventana.mainloop()
