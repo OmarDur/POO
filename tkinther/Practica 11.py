@@ -4,6 +4,8 @@ def mostrarMensaje():
     messagebox.showinfo("Aviso", "Presione el boton azul")
 
 
+
+
 #1. Instanciamos la ventana
 ventana= Tk()
 ventana.title("Ejemplo de 3 frames ")
@@ -34,6 +36,7 @@ botonAmarillo.grid(row=1 , column=1)
 botonVerde= Button(seccion3, text="Boton verde", fg="red", bg="green")
 botonVerde.configure(height=2,width=10)
 botonVerde.pack()
+
 
 
 #LLamamos el Main
