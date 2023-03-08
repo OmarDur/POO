@@ -1,7 +1,5 @@
-import tkinter as tk
+from tkinter import Tk, Button, Frame, messagebox, Label, Entry
 
-def mostrarMensaje():
-    messagebox.showinfo("Aviso", "Presione enter")
 
 def ingresar():
     
@@ -11,35 +9,38 @@ def ingresar():
     
     if correo == "omardc@upq.edu.mx" and contrasena == "1234":
         
-        mensaje_label.config(text="¡Bienvenido!")
+        messagebox.showinfo("Aviso","¡Bienvenido!")
     else:
         
-        mensaje_label.config(text="Revisa tus datos")
+        messagebox.showerror("Revisa tus datos")
+        messagebox.showerror("50x50")
         
 
-ventana = tk.Tk()
+ventana =Tk()
 ventana.title("Login")
 ventana.geometry("600x400")
 
 #
-correo_label = tk.Label(ventana, text="Correo:")
+correo_label =Label(ventana, text="Correo:")
 correo_label.pack()
-correo_entry = tk.Entry(ventana)
+correo_entry =Entry(ventana)
 correo_entry.pack()
 
-contrasena_label = tk.Label(ventana, text="Contraseña:")
+contrasena_label =Label(ventana, text="Contraseña:")
 contrasena_label.pack()
-contrasena_entry = tk.Entry(ventana, show="*")
+contrasena_entry =Entry(ventana, show="*")
 contrasena_entry.pack()
 
-boton = tk.Button(ventana, text="Ingresar", command=ingresar)
+boton =Button(ventana, text="Ingresar", command=ingresar)
 boton.pack()
 
-mensaje_label = tk.Label(ventana, text="")
+mensaje_label =Label(ventana, text="")
 mensaje_label.pack()
 
 
 ventana.mainloop()
+
+
 
 
 
