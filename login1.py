@@ -13,7 +13,8 @@ def ingresar():
     else:
         
         messagebox.showerror("Revisa tus datos")
-        messagebox.showerror("50x50")
+ 
+        
         
 
 ventana =Tk()
